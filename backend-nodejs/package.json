@@ -1,0 +1,18 @@
+{
+  "name": "full_stack_developer_interview_task",
+  "version": "1.0.0",
+  "description": "full stack developer interview task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:express": "node ./index.js",
+    "start": "nodemon index"
+  },
+  "author": "Mahmoud Metwally",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
+  }
+}

@@ -1,0 +1,15 @@
+version: '3'
+services:
+  frontend:
+    build: ./frontend-nextjs
+    image: mahmmels/interview-task-frontend
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+  backend:
+    image: mahmmels/interview-task-backend
+    build: ./backend-nodejs
+    ports:
+      - "8000:8000"
